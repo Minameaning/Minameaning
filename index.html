@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon_pizza.png" type="image/x-icon">
+  <link rel="stylesheet" href="stylesheet.css" />
+  <title>Mina's Pizza!</title>
+</head>
+
+<body>
+  <main>
+    <h1>Welcome to Mina's!</h1>
+    <p style="text-align: center;"> <em>Since 1995</em></p>
+    <p style="text-align: center;"><mark>The original pizza oven <strong>No.1</strong> in the world!!!</mark></p>
+    <br>
+    <form action="http://example.com/submit_form" method="post" target="_blank">
+      <div style="display: flex;">
+        <div style="margin-right: 64px;">
+          <H2>How would you like us to serve you today?</H2><br>
+          <input type="radio" id="take out" name="deliverType" value="takeOut">
+          <label for="take out">take out</label>
+          <input type="radio" id="delivery" name="deliverType" value="delivery">
+          <label for="delivery">delivery</label><br><br>
+
+          <!-- <customer choose their pizza part> -->
+          <h2>Step1 :Choose your pizza's size</h2>
+          <div style="display: flex;">
+            <div style="margin-bottom: 32px;">
+              <img src="Pizza_Size.png" alt="pizzasize"><br>
+              <input type="radio" id="sizeS" name="size" value="S">
+              <label for="sizeS">Small(7')</label>
+
+              <input type="radio" id="sizeM" name="size" value="M">
+              <label for="sizeM">Medium (9')</label>
+
+              <input type="radio" id="sizeL" name="size" value="L">
+              <label for="sizeL">Large (12')</label>
+            </div>
+          </div>
+          <h2>Step2 :Choose your crust& sauce</h2><br>
+          <input type="radio" id="crust" name="crust" value="handTossed">
+          <label for="crust">Hand tossed</label><br>
+          <input type="radio" id="crust" name="crust" value="thinCrust">
+          <label for="crust">Thin crust</label><br><br>
+
+          <label for="sauce">Your sauce :</label><br><br>
+          <input type="radio" id="sauceoption" name="sauceoption" value="homeMade">
+          <label for="sauceoption">Original homemade sauce</label><br>
+          <input type="radio" id="sauceoption" name="sauceoption" value="thousandIsland">
+          <label for="sauceoption">Thousand island sauce</label><br><br>
+
+          <label for="sauce">How saucy :</label><br><br>
+          <select id="sauce" name="sauce">
+            <option value="regularSauce">Regular</option>
+            <option value="extraSauce">Extra sauce</option>
+            <option value="lessSauce">Less sauce</option>
+            <option value="noSauce">No sauce</option><br>
+          </select>
+          <br><br>
+
+          <h2>Step3 :Create your own toppings</h2>
+          <h3>Choose your meat:</h3>
+          <p>From the land :</p>
+
+          <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+          <label for="pepperoni">pepperoni</label>
+          <input type="checkbox" id="ham" name="topping" value="ham">
+          <label for="ham">ham</label>
+          <input type="checkbox" id="groundBeef" name="topping" value="groundBeef">
+          <label for="groundBeef">ground beef</label><br>
+          <input type="checkbox" id="bacon" name="topping" value="bacon">
+          <label for="bacon">bacon</label>
+          <input type="checkbox" id="sausage" name="topping" value="sausage">
+          <label for="sausage">sausage</label>
+          <input type="checkbox" id="chicken" name="topping" value="chicken">
+          <label for="chicken">chicken</label>
+
+          <p>From the sea:</p>
+          <input type="checkbox" id="shrimp" name="topping" value="shrimp">
+          <label for="shrimp">shrimp</label>
+          <input type="checkbox" id="salmon" name="topping" value="salmon">
+          <label for="salmon">salmon</label>
+          <input type="checkbox" id="mussel" name="topping" value="mussel">
+          <label for="mussel">mussel</label>
+
+          <h3>Choose your veggies :</h3>
+          <input type="checkbox" id="jalapeno" name="topping" value="jalapeno">
+          <label for="jalapeno">jalapeno</label>
+          <input type="checkbox" id="pineapple" name="topping" value="pineapple">
+          <label for="pineapple">pineapple</label>
+          <input type="checkbox" id="bellpepper" name="topping" value="bellpepper">
+          <label for="bellpepper">bellpepper</label>
+          <input type="checkbox" id="onion" name="topping" value="onion">
+          <label for="onion">onion</label><br>
+          <input type="checkbox" id="tomato" name="topping" value="tomato">
+          <label for="tomato">tomato</label>
+          <input type="checkbox" id="basil" name="topping" value="basil">
+          <label for="basil">basil</label>
+          <input type="checkbox" id="black olive" name="topping" value="black olive">
+          <label for="black olive">black olive</label><br><br>
+
+          <label for="message">Comment:</label><br>
+          <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+          <label for="quantity">Quality</label>
+          <input type="number" id="quantity" id="quantity" name="quantity" min="1" max="99" step="1">
+
+        </div>
+
+        <div>
+          <aside>
+            <!-- customer information part -->
+            <h2>Contact information</h2><br>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="first and last name"><br><br>
+            <label for="E-mail">E-mail:</label><br>
+            <input type="text" id="E-mail" name="E-mail" placeholder="xxx@gmail.com"><br><br>
+            <label for="phonenumber">Phone number:</label><br>
+            <input type="tel" id="phonenumber" name="phonenumber" placeholder="0123456789"><br><br>
+          </aside>
+          <br>
+
+          <input type="submit" value="Submit" />
+          <input type="reset" value="reset" />
+          <br>
+          <br>
+
+        </div>
+      </div>
+    </form>
+  </main>
+</body>
+<footer>
+  <p><small>© Mina's All rights reserved.</small></p>
+</footer>
+<script>
+  // variable naming conventino
+  // lowercase - delivertype
+  // uppercase - DELIVERTYPE
+  // camelcase - deliverType
+  // pascalcase - DeliverType
+  // snakecase - deliver_type
+  // kebabcase - deliver-type
+
+  const form = {
+    deliverType: "take out"
+  }
+</script>
+
+</html>
