@@ -16,27 +16,22 @@
     <p style="text-align: center;"> <em>Since 1995</em></p>
     <p style="text-align: center;"><mark>The original pizza oven <strong>No.1</strong> in the world!!!</mark></p>
     <br>
+    <div>
+   
+        <!-- customer information part -->
+        <h2>Contact information</h2><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="first and last name"><br><br>
+        <label for="E-mail">E-mail:</label><br>
+        <input type="text" id="E-mail" name="E-mail" placeholder="xxx@gmail.com"><br><br>
+        <label for="phonenumber">Phone number:</label><br>
+        <input type="tel" id="phonenumber" name="phonenumber" placeholder="0123456789"><br><br>
+
+      <br>
+
+    </div>
     <form action="http://example.com/submit_form" method="post" target="_blank">
       <div style="display: flex;">
-        <div>
-          <aside>
-            <!-- customer information part -->
-            <h2>Contact information</h2><br>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="first and last name"><br><br>
-            <label for="E-mail">E-mail:</label><br>
-            <input type="text" id="E-mail" name="E-mail" placeholder="xxx@gmail.com"><br><br>
-            <label for="phonenumber">Phone number:</label><br>
-            <input type="tel" id="phonenumber" name="phonenumber" placeholder="0123456789"><br><br>
-          </aside>
-          <br>
-
-          <input type="submit" value="Submit" />
-          <input type="reset" value="reset" />
-          <br>
-          <br>
-
-        </div>
         <div style="margin-right: 64px;">
           <H2>How would you like us to serve you today?</H2><br>
           <input type="radio" id="take out" name="deliverType" value="takeOut">
@@ -126,10 +121,12 @@
 
           <label for="quantity">Quality</label>
           <input type="number" id="quantity" id="quantity" name="quantity" min="1" max="99" step="1">
+          <br><br>
 
+          <input type="submit" value="Submit" />
+          <input type="reset" value="reset" />
+          <br>
         </div>
-
-        
       </div>
     </form>
   </main>
@@ -137,4 +134,11 @@
 <footer>
   <p><small>© Mina's All rights reserved.</small></p>
 </footer>
+<script>
+
+  const form = {
+    deliverType: "take out"
+  }
+</script>
+
 </html>
